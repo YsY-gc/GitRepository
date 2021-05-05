@@ -1,0 +1,42 @@
+git config --global user.name "Your Name"
+git config --global user.email "email@example.com"
+
+git init
+
+git status
+
+
+
+git add readme.txt
+git commit -m "say something"
+
+git log
+
+git reflog    //记录每一次命令，用于找回版本号
+
+git diff readme.txt     //查看发生的变化
+
+git reset --hard HEAD^ //回退上一个版本
+git reset --hard 1094a //回到版本号为1094a...的版本
+
+git reset HEAD readme.txt  //撤销暂存区的修改
+git checkout -- readme.txt //丢弃工作区修改
+git reset  --hard HEAD^ //回退版本
+
+git rm readme.txt //将文件删除后，在版本库删除
+git commit -m "remove readme.txt"
+
+git checkout -- readme.txt //将文件删除后，恢复
+
+ssh-keygen -t rsa -C "youremail@example.com"//创建ssh key
+
+git remote add origin git@github.com:YsY-gc/GitRepository //将本地仓库与远程仓库相关联，并命名为origin
+
+
+git push origin master //将本地master分支推送到远程仓库  第一次加 -u 将本地分支与远程分支关联
+
+git remote -v //查看远程仓库信息
+
+git remote rm origin //将本地仓库与远程仓库取消关联
+
+git clone git@github.com:YsY-gc/GitRepository //从远程仓库克隆
