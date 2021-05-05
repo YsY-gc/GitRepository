@@ -1,16 +1,13 @@
-git config --global user.name "Your Name"
-git config --global user.email "email@example.com"
+git config --global user.name "Your Name" //登录名
+git config --global user.email "email@example.com" //登陆邮箱
+git init //进入某个文件夹，将其初始化为git仓库
 
-git init
+git status //查看当前状态
 
-git status
+git add readme.txt //将文件加入暂存区
+git commit -m "say something" //将暂存区文件提交到仓库
 
-
-
-git add readme.txt
-git commit -m "say something"
-
-git log
+git log //查看提交日志
 
 git reflog    //记录每一次命令，用于找回版本号
 
@@ -31,7 +28,6 @@ git checkout -- readme.txt //将文件删除后，恢复
 ssh-keygen -t rsa -C "youremail@example.com"//创建ssh key
 
 git remote add origin git@github.com:YsY-gc/GitRepository //将本地仓库与远程仓库相关联，并命名为origin
-
 
 git push origin master //将本地master分支推送到远程仓库  第一次加 -u 将本地分支与远程分支关联
 
